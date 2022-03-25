@@ -24,8 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnRead = New System.Windows.Forms.Button()
         Me.lblRead = New System.Windows.Forms.Label()
-        Me.btnExit = New System.Windows.Forms.Button()
         Me.btnReward = New System.Windows.Forms.Button()
+        Me.btnExitProgram = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnRead
@@ -46,31 +46,31 @@ Partial Class Form1
         Me.lblRead.TabIndex = 1
         Me.lblRead.Text = "Label1"
         '
-        'btnExit
-        '
-        Me.btnExit.Location = New System.Drawing.Point(56, 163)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(193, 23)
-        Me.btnExit.TabIndex = 2
-        Me.btnExit.Text = "Click here to find the highest student"
-        Me.btnExit.UseVisualStyleBackColor = True
-        '
         'btnReward
         '
-        Me.btnReward.Location = New System.Drawing.Point(325, 163)
+        Me.btnReward.Location = New System.Drawing.Point(56, 163)
         Me.btnReward.Name = "btnReward"
-        Me.btnReward.Size = New System.Drawing.Size(75, 23)
-        Me.btnReward.TabIndex = 3
-        Me.btnReward.Text = "Exit"
+        Me.btnReward.Size = New System.Drawing.Size(193, 23)
+        Me.btnReward.TabIndex = 2
+        Me.btnReward.Text = "Click here to find the highest student"
         Me.btnReward.UseVisualStyleBackColor = True
+        '
+        'btnExitProgram
+        '
+        Me.btnExitProgram.Location = New System.Drawing.Point(325, 163)
+        Me.btnExitProgram.Name = "btnExitProgram"
+        Me.btnExitProgram.Size = New System.Drawing.Size(75, 23)
+        Me.btnExitProgram.TabIndex = 3
+        Me.btnExitProgram.Text = "Exit"
+        Me.btnExitProgram.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnExitProgram)
         Me.Controls.Add(Me.btnReward)
-        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblRead)
         Me.Controls.Add(Me.btnRead)
         Me.Name = "Form1"
@@ -82,6 +82,6 @@ Partial Class Form1
 
     Friend WithEvents btnRead As Button
     Friend WithEvents lblRead As Label
-    Friend WithEvents btnExit As Button
     Friend WithEvents btnReward As Button
+    Friend WithEvents btnExitProgram As Button
 End Class

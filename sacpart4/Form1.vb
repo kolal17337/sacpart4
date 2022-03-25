@@ -29,7 +29,7 @@
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnReward.Click
         Dim strReward = InputBox("What subject would you like to award marks for?")
         If strReward = "Maths" Then
             MsgBox(strMaths(1))
@@ -37,10 +37,12 @@
             MsgBox(strEnglish(1))
         ElseIf strReward = "PE" Then
             MsgBox(strPE(1))
+        Else
+            MsgBox("That is not a viable input")
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnReward.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnExitProgram.Click
         End
     End Sub
 End Class
